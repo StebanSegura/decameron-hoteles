@@ -1,0 +1,69 @@
+:root {
+  --decameron-teal: #0f5257;
+  --decameron-teal-dark: #0b3d40;
+  --decameron-mango: #e8973a;
+  --decameron-mango-dark: #c97c22;
+
+  --bs-primary: var(--decameron-teal);
+  --bs-primary-rgb: 15, 82, 87;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--decameron-teal);
+  --bs-btn-border-color: var(--decameron-teal);
+  --bs-btn-hover-bg: var(--decameron-teal-dark);
+  --bs-btn-hover-border-color: var(--decameron-teal-dark);
+  --bs-btn-active-bg: var(--decameron-teal-dark);
+  --bs-btn-active-border-color: var(--decameron-teal-dark);
+}
+
+.navbar-decameron {
+  background-color: var(--decameron-teal-dark);
+  border-bottom: 4px solid var(--decameron-mango);
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--decameron-mango);
+  color: var(--decameron-teal-dark);
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-decameron th {
+  border-bottom-width: 2px;
+  border-bottom-color: var(--decameron-teal-dark);
+  color: var(--decameron-teal-dark);
+}
+
+.stat-card {
+  border: 1px solid #d8e0df;
+  border-radius: 0.5rem;
+  padding: 0.9rem 1rem;
+  background: #fff;
+  height: 100%;
+}
+
+.stat-card .stat-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #6b7a7c;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.stat-card .stat-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--decameron-teal-dark);
+}
+
+.stat-card .stat-value.warn { color: var(--decameron-mango-dark); }
+.stat-card .stat-value.full { color: #b3402f; }
